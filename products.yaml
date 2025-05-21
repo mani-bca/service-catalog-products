@@ -1,1 +1,20 @@
-g
+products:
+  - name: ec2-instance
+    owner: manivasagan.p@hcltech.com
+    description: Launch an EC2 instance
+    distributor: HCLTech
+    supportDescription: EC2 provisioning support
+    versions:
+      - name: v1
+        description: Initial EC2 version
+        templateFile: templates/ec2-instance.yaml
+
+  - name: s3-bucket
+    owner: manivasagan.p@hcltech.com
+    description: Create an S3 bucket
+    distributor: HCLTech
+    supportDescription: S3 provisioning support
+    versions:
+      - name: v1
+        description: Initial S3 version
+        templateFile: templates/s3-bucket.yaml
