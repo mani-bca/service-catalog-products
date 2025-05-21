@@ -11,10 +11,10 @@ products:
 
   - name: s3-bucket
     owner: manivasagan.p@hcltech.com
-    description: Create an S3 bucket
-    distributor: HCLTech
-    supportDescription: S3 provisioning support
+    description: Simple S3 bucket creation
+    distributor: HCL
+    supportDescription: Contact HCL DevOps team
     versions:
       - name: v1
-        description: Initial S3 version
+        description: First version
         templateFile: templates/s3-bucket.yaml
