@@ -1,0 +1,18 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: EC2 instance template
+
+Parameters:
+  InstanceType:
+    Type: String
+    Default: t2.micro
+    Description: EC2 instance type
+
+Resources:
+  EC2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      InstanceType: !Ref InstanceType
+      ImageId: ami-0c94855ba95c71c99  # Amazon Linux 2 AMI (us-east-1)
+      Tags:
+        - Key: Name
+          Value: ServiceCatalogEC2
